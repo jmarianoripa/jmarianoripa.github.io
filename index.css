@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+}
+body{
+    background-color: black;
+    
+}
+/* apariencia */
+.contenido{
+    color: goldenrod;
+    text-align: center;
+    padding-top: 200px;
+    font-family: Gabriola;
+    font-size: 40px;
+}
+/* efectos contenido */
+.contenido {
+    opacity: 0;
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* /////////////// links ///////////////*/
+
+
+  /* link1 izq */
+  .izq {
+    padding: 10px;
+    border: solid red;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    font-size: 12px;
+    font-family: Century Gothic;
+    width: 100px;
+    height: 80px;
+    float: left;
+    margin-top: 100px;
+    margin-left: 200px;
+    text-decoration: none;
+    opacity: 0;
+    animation: aparecer 0.8s linear both;
+    animation-delay: 17s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes aparecer {
+    0% {
+      filter: blur(.01px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+
+/* link2 der */
+
+.der{
+  padding: 10px;
+  border: solid cornflowerblue;
+  text-align: center;
+  border-radius: 25px;
+  color: white;
+  font-size: 12px;
+  font-family: Century Gothic;
+  width: 100px;
+  height: 80px;
+  margin-top: 100px;
+  float: right;
+  margin-right: 200px;
+  text-decoration: none;
+  opacity: 0;
+  animation: aparecer 0.8s linear both;
+  animation-delay: 21s;
+  animation-fill-mode: forwards;
+}
+@keyframes aparecer {
+  0% {
+    filter: blur(.01px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/* Imagen */
+
+.imagen{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.img1{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-top: 200px;
+  opacity: 0;
+  animation: aparecer 0.8s linear both;
+  animation-delay: 25s;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
